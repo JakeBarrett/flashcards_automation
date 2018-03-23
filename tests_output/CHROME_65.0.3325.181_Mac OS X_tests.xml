@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="7">
+
+  <testsuite name="tests"
+    errors="0" failures="0" hostname="" id="" package="tests" skipped="0"
+    tests="7" time="86.38" timestamp="Fri, 23 Mar 2018 21:45:28 GMT">
+  
+    <testcase name="App Opens Test" classname="tests" time="3.529" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="JAKE-40 LOGIN" classname="tests" time="3.891" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="JAKE-41 CREATE A NEW DECK" classname="tests" time="9.249" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="JAKE-42 ADDING CARDS TO A DECK" classname="tests" time="12.63" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="JAKE-44 STUDY FEATURE" classname="tests" time="24.14" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="JAKE-43 DELETING CARDS FROM DECK" classname="tests" time="13.19" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="JAKE-53 DELETE DECK WORKAROUND" classname="tests" time="19.75" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
