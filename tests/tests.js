@@ -1,11 +1,12 @@
-const selectors = require('..//selectors')
-const functions = require('..//functions')
+const selectors = require('../source/selectors')
+const functions = require('../source/functions')
+const data = require('../source/data')
 
 
 module.exports = {
 
     beforeEach : browser => {
-        browser.url('https://cards-beta.devclock.com/')
+        browser.url('https://devmountain-qa.github.io/employee-manager-v2/build/index.html')
     },
 
         after: browser => {
@@ -14,55 +15,23 @@ module.exports = {
         },
 
 
-    'App Opens Test' : browser => {
-        browser.assert.elementPresent("body")
+"JAKE-56 Employee List" : browser => {functions.employeeListFunction(browser,selectors,data.page)},
 
-    },
+"JAKE-57 Add Employee" : browser => {functions.addEmployeeFunction(browser,selectors,data.Employee1)},
+
+"JAKE-62 Delete Button/Delete Employee" : browser => {functions.deleteEmployeeFunction(browser,selectors,data)},
+
+"JAKE-58 Edit Employee Valid Data" : browser => {functions.editEmployeeValidFunction(browser,selectors,data.Employee2)},
+
+"JAKE-59 Edit Employee Invalid Data" : browser => {functions.editEmployeeInvalidFunction(browser,selectors,data)},
+
+"JAKE-60 Save Button" : browser => { functions.saveButtonFunction(browser,selectors,data)},
+
+"JAKE-61 Cancel Button" : browser => {functions.cancelButtonFunction(browser,selectors,data)},
 
 
-// If you run JAKE-39, you will need to change the login.emailAddress selector to a different address
-   
-    /*
-    'JAKE-39 CREATE AN ACCOUNT' : browser => {
-        functions.createAccount(browser,selectors.login)
 
-    }, 
-    */
 
-// User logs in
-     'JAKE-40 LOGIN' : browser => {
-        functions.loginFunction(browser,selectors.login)
-
-    }, 
-  
-// User creates a new deck
-    'JAKE-41 CREATE A NEW DECK' : browser => {
-      functions.createANewDeckFunction(browser,selectors.createANewDeck)
-
-    },
-
- // User adds cards to the deck
-    'JAKE-42 ADDING CARDS TO A DECK' : browser => {
-        functions.addCardsToDeck(browser,selectors.addingNewCardsToADeck)
-    },
-
-// User studies deck    
-    'JAKE-44 STUDY FEATURE' : browser=> {
-        functions.studyFeature(browser,selectors.study)
-        
-    },
-
-// User deletes cards from the deck    
-    'JAKE-43 DELETING CARDS FROM DECK' : browser => {
-        functions.deleteCardsFromDeck(browser,selectors.deleteCards)
-
-    },
-
-// User deletes the entire deck
-    'JAKE-53 DELETE DECK WORKAROUND' : browser => {
-        functions.deleteDeckTrick(browser,selectors.deleteDeck)
-
-    },
 
 
 }
