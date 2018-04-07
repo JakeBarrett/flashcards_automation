@@ -110,7 +110,6 @@ let studyFeature =(browser,selectors) => {
     .pause(2000)
         
 
-
 }
 
 /**
@@ -161,7 +160,7 @@ let deleteDeckTrick =(browser,selectors) => {
     }
 
 
-
+//note to be saved
 
 module.exports = {
 
